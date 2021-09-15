@@ -1,8 +1,7 @@
-import {Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn} from 'typeorm'
-//responsável por criar a entidade tabela no banco de dados
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm'
+// responsável por criar a entidade tabela no banco de dados
 @Entity()
-export class Tasks{
-
+export class Tasks {
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -13,7 +12,7 @@ export class Tasks{
     description: string;
 
     @Column({
-        default: false
+      default: false
     })
     finished: boolean;
 

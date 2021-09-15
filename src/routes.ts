@@ -1,11 +1,11 @@
-import { Router, Request, Response} from 'express'
+import { Router, Request, Response } from 'express'
 
-import { getTasks, saveTask , getTask, updateTask, finishedTask, removeTask}  from './controller/TasksController'
+import { getTasks, saveTask, getTask, updateTask, finishedTask, removeTask } from './controller/TasksController'
 
 const routes = Router()
 
-routes.get('/', (req: Request, res: Response) =>{
-    return res.json({message: 'hello'})
+routes.get('/', (req: Request, res: Response) => {
+  return res.json({ message: 'hello' })
 })
 
 routes.get('/tasks', getTasks)
