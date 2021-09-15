@@ -15,5 +15,4 @@ routes.put('/task/:id', updateTask)
 routes.patch('/task/:id', finishedTask)
 routes.delete('/task/:id', removeTask)
 
-
 export default routes
